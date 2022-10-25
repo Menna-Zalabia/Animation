@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:#cacafa;
+    animation-name:sky;
+    animation-duration:18s;
+    animation-delay: 20s;
+    animation-fill-mode: forwards;
+}
+@keyframes sky{
+    50% {background:-webkit-linear-gradient(right,#cacafa,#ebd2a4);}
+    100%{ background:-webkit-linear-gradient(left top,#5a5a74,black);}
+}
+.building{
+    position: absolute;
+    bottom: 70px;
+}
+.bird{
+    position: absolute;
+    z-index: 5;
+    transform:scale(-1,1);
+    animation-name: birds;
+    animation-duration:12s;
+    animation-fill-mode: forwards;
+}
+@keyframes birds{
+    0%{right:1100px;}
+    100%{right:0px;visibility: hidden;}
+}
+.sun{
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: yellow;
+    box-shadow:1px 1px 210px 100px yellow;
+    position: absolute;
+    z-index: -1;
+    animation-name:sun;
+    animation-duration:9s;
+    animation-delay:20s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    right:0px;
+    
+}
+@keyframes sun{
+    0% {right:0px; top:0px; background-color: yellow; box-shadow:1px 1px 210px 100px yellow;}
+    100%{right:1650px; top:400px; background-color:darkorange; box-shadow:1px 1px 210px 100px darkorange; visibility: hidden;}
+}
+.stars{
+    position: absolute;
+    z-index: -5;
+    left: 20%;
+    visibility: hidden;
+    animation-name: star;
+    animation-duration:10s;
+    animation-delay:32s;
+    animation-fill-mode: forwards;
+    
+    
+}
+@keyframes star{
+    0%{visibility:visible;}
+    100%{visibility:visible;}
+    
+}
+.moon{
+    position: absolute;
+    width:100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: whitesmoke;
+    box-shadow:5px 5px 150px 80px white;
+    visibility: hidden;
+    animation-name: moon;
+    animation-duration:10s;
+    animation-delay:29s;
+    animation-fill-mode: forwards;
+    
+    
+}
+@keyframes moon{
+    0%{visibility:visible;right:1650px; top:400px;}
+    100%{right:1000px; top:60px;visibility:visible}
+    
+}
+.car1{
+    position: absolute;
+    z-index: 2;
+    bottom: 0;
+    transform: scale(-1,1);
+    right: 0px;
+    animation-name: cars;
+    animation-duration:7s;
+    animation-delay:12s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+
+}
+@keyframes cars{
+    0%{right:0px}
+    100%{right:1220px}
+}
+.anime{
+    position: absolute;
+    z-index: 1;
+    bottom: 6px;
+    animation-name: anime2;
+    animation-duration:12s;
+    animation-delay:40s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    visibility: hidden;
+}
+@keyframes anime2{
+    0%{left:0px;visibility: visible;}
+    100%{left:1100px;visibility: hidden;}
+}
+
